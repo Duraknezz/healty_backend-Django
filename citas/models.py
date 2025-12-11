@@ -21,12 +21,6 @@ class Cita(models.Model):
     estado = models.CharField(max_length=20, choices=ESTADOS, default='pendiente')
     created_at = models.DateTimeField(auto_now_add=True)
 
-    calorias_recomendadas = models.IntegerField(null=True, blank=True)
-    proteina_g = models.IntegerField(null=True, blank=True)
-    carbohidratos_g = models.IntegerField(null=True, blank=True)
-    grasas_g = models.IntegerField(null=True, blank=True)
-    peso_actual = models.FloatField(null=True, blank=True)
-
     class Meta:
         ordering = ['-fecha', '-hora']
 
