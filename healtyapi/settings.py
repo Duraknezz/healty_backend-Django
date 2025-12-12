@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'pacientes',
     'citas',
     'registros',
+    'plan_alimenticio',
 ]
 
 MIDDLEWARE = [
